@@ -1,0 +1,118 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+}
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+div#info-component {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(100%);
+}
+
+div#info-component .top-avatar img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.top-avatar {
+  margin-bottom: 20px;
+}
+
+.link-group {
+  margin-top: 20px;
+  display: inline-grid;
+}
+
+div#info-component h3 {
+  font-size: 24px;
+  color: white
+}
+
+.link-group a.blog-link{
+  border: 1px solid black;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.link-group a.blog-link:hover {
+  color: bisque;
+}
+
+ul.social-link li img{
+  width: 50px  
+}
+
+ul.social-link {
+  display: inline-block;
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul.social-link li {
+  display: inline-block;
+}
+
+div#post-component div.left {
+  width: 30%;
+  float: left
+}
+
+div#post-component div.right {
+  width: 60%;
+  float: left;
+  background-color: whitesmoke;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, .5);
+  height: 800px;
+  overflow: hidden;
+  margin: 70px 0px;
+}
+
+.left ul.social-link {
+  background-color: ghostwhite;
+  border-radius: 5px;
+}
+
+.title h3 {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.content {
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.post .title {
+  padding: 4px 30px;
+  border-bottom: 1px solid grey;
+  margin: 10px 30px;
+}
+
+.post .body {
+  margin: 10px 60px 40px;
+}
+
+.post .title a {
+  text-decoration: none;
+  font-weight: 100;
+  color: honeydew;
+}
+
+.post .title a:hover {
+  color: black;  
+}
