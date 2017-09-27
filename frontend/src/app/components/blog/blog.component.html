@@ -1,0 +1,18 @@
+<div id="post-component">
+  <div class="left">
+    <app-info></app-info>
+  </div>
+  <div class="right">
+     <div class="title">
+       <h3>List Posts </h3>
+     </div>
+     <div class="content">
+       <div class="post" *ngFor="let post of list">
+         <div class="title">
+           <a [routerLink]="['/blog', post.id]" [innerHTML]="post.title"></a>
+         </div>
+         <div class="body" [innerHTML]="post.content"></div>
+       </div>
+    </div>
+  </div>
+</div>
