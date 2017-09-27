@@ -8,7 +8,7 @@ import { CommonService } from '../../services/common.service'
   providers: [ CommonService ]
 })
 export class BlogComponent implements OnInit {
-  list: any;
+  list: any = [];
 
   constructor(private commonService: CommonService) { }
 
