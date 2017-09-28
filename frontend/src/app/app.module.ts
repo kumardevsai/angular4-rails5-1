@@ -9,9 +9,11 @@ import { MainComponent } from './components/main/main.component';
 import { InfoComponent } from './components/info/info.component';
 import { BlogComponent } from './components/blog/blog.component';
 
+import { EvenPipe } from './pipes/even.pipe';
+
 @NgModule({
   declarations: [
-    AppComponent, MainComponent, InfoComponent, BlogComponent
+    AppComponent, MainComponent, InfoComponent, BlogComponent, EvenPipe
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpModule

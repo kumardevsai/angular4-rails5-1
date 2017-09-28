@@ -7,7 +7,7 @@
        <h3>List Posts </h3>
      </div>
      <div class="content">
-       <div class="post" *ngFor="let post of list">
+       <div class="post" *ngFor="let post of list | even: {id: 1, name: 'tuanna'}">
          <div class="title">
            <a [routerLink]="['/blog', post.id]" [innerHTML]="post.title"></a>
          </div>
