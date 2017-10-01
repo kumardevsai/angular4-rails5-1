@@ -19,4 +19,8 @@ export class BlogComponent implements OnInit {
         console.log(error);
     })
   }
+
+  tuanna (event) {
+    console.log(event)  
+  }
 }

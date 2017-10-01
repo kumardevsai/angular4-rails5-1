@@ -116,3 +116,25 @@ div#post-component div.right {
 .post .title a:hover {
   color: black;  
 }
+
+table {
+  width: 80%;
+  margin: auto;
+  border: none;
+}
+
+tr {
+  width: 120px;
+}
+
+th {
+  background-color: azure;
+  padding: 10px;
+  color: cadetblue;
+}
+
+td {
+  text-align: center;
+  padding: 10px 0px 3px 0px;
+  border-bottom: 1px solid lightblue;
+}
