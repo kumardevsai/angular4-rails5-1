@@ -9,6 +9,7 @@ import { CommonService } from '../../services/common.service'
 })
 export class BlogComponent implements OnInit {
   list: any = [];
+  limit: number = 5;
 
   constructor(private commonService: CommonService) { }
 
@@ -21,6 +22,8 @@ export class BlogComponent implements OnInit {
   }
 
   tuanna (event) {
-    console.log(event)  
+    if (this.limit < this.list.length) {
+      this.limit += 5;
+    }
   }
 }

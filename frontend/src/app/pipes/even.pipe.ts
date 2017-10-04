@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class EvenPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return value.filter(item => item.id % 3 === 0);
+  transform(value: any, limit: number): any {
+    return value.slice(0, limit);
   }
 
 }
