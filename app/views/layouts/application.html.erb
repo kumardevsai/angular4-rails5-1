@@ -3,16 +3,12 @@
   <head>
     <title>RailsApp</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag :application %>
     <base href="/">
   </head>
 
   <body>
     <%= yield %>
   </body>
-  <script type="text/javascript" src="<%= webpack_path "dist/inline.bundle.js" %>"></script>
-  <script type="text/javascript" src="<%= webpack_path "dist/polyfills.bundle.js" %>"></script>
-  <script type="text/javascript" src="<%= webpack_path "dist/styles.bundle.js" %>"></script>
-  <script type="text/javascript" src="<%= webpack_path "dist/vendor.bundle.js" %>"></script>
-  <script type="text/javascript" src="<%= webpack_path "dist/main.bundle.js" %>"></script>
+  <%= javascript_include_tag :application  %>
 </html>
